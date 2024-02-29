@@ -33,7 +33,7 @@ const NavBar = () => {
       <nav className="navbar">
         <div className="navBarContainer">
           <Link to="/" className="navbarLogo" onClick={closeMobileMenu}>
-            HYERIM'S Portfolio <i className="fab fa-typo3" />
+          폴라코드 출력앱<i className="fab fa-typo3" />
           </Link>
           <div className="menuIcon" onClick={handleOnClickHamburger}>
             <i className={isClicked ? "fas fa-times" : "fas fa-bars"} />
@@ -42,24 +42,6 @@ const NavBar = () => {
             <li className="navItem">
               <Link to="/" className="navLinks" onClick={closeMobileMenu}>
                 Home
-              </Link>
-            </li>
-            <li className="navItem">
-              <Link
-                to="/aboutMe"
-                className="navLinks"
-                onClick={closeMobileMenu}
-              >
-                AboutMe
-              </Link>
-            </li>
-            <li className="navItem">
-              <Link
-                to="/portfolio"
-                className="navLinks"
-                onClick={closeMobileMenu}
-              >
-                Portfolio
               </Link>
             </li>
           </ul>
