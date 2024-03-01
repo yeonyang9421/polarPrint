@@ -68,7 +68,7 @@ export function MyGridComponent({ rowData }) {
   };
 
   console.log("rowData", rowData);
-  const [columnDefs, setColumnDefs] = useState([
+  const [columnDefs] = useState([
     {
       headerName: "폴라상품",
       field: "itemName",

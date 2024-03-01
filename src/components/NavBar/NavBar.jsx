@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "../Button/Button";
 import "./NavBar.css";
 
 const NavBar = () => {
   const [isClicked, setIsClicked] = React.useState(false);
-  const [isButton, setIsButton] = React.useState(true);
+  const [, setIsButton] = React.useState(true);
 
   const handleOnClickHamburger = () => {
     setIsClicked(!isClicked);

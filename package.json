@@ -2,6 +2,7 @@
   "name": "website1",
   "version": "0.1.0",
   "private": true,
+  "main": "src/main.js",
   "dependencies": {
     "-": "0.0.1",
     "@faker-js/faker": "^8.4.1",
@@ -27,7 +28,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "electron": "electron ."
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,6 +46,10 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^29.1.0",
+    "wait-on": "^7.2.0"
+  },
   "homepage": "https://yeonyang9421.github.io/react_deploytest/"
 }
